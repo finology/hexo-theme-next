@@ -31,6 +31,8 @@
       <meta itemprop="name" content="{{ title }}"/>
     </span>
 
+    {% include '../_custom/google_ad_header.swig' %}
+
     {% if not headlessPost %}
       <header class="post-header">
 
@@ -274,6 +276,8 @@
     {#################}
     {### POST BODY ###}
     {#################}
+    {% include '../_custom/google_ad_header.swig' %}
+
     <div class="post-body{% if theme.han %} han-init-context{% endif %}{% if post.direction && post.direction.toLowerCase() === 'rtl' %} rtl{% endif %}" itemprop="articleBody">
 
       {# Gallery support #}
