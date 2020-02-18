@@ -31,7 +31,7 @@
       <meta itemprop="name" content="{{ title }}"/>
     </span>
 
-    {% include '../_custom/google_ad_header.swig' %}
+    {#% include '../_custom/google_ad_header.swig' %#}
 
     {% if not headlessPost %}
       <header class="post-header">

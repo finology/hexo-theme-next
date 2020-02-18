@@ -25,6 +25,8 @@
     {##################}
     <div class="post-block page">
       {% include '_partials/page/page-header.swig' %}
+
+      {% include '_custom/google_ad_header.swig' %}
       {#################}
       {### PAGE BODY ###}
       {#################}

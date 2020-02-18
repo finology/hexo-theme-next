@@ -11,6 +11,8 @@
   {######################}
   <div class="post-block category">
 
+    {% include '_custom/google_ad_header.swig' %}
+
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
         <{% if theme.seo %}h2{% else %}h1{% endif %}>{#

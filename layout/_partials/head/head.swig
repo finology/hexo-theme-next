@@ -4,6 +4,7 @@
 <meta name="theme-color" content="{{ theme.android_chrome_color }}"/>
 
 {% include '../../_custom/google_adsense.swig' %}
+{% include '../../_custom/baidusitemappush.swig' %}
 
 {% if theme.needmoreshare2.enable %}
   {% set needmoreshare2_css = url_for(theme.vendors._internal + '/needsharebutton/needsharebutton.css') %}

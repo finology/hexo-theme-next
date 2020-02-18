@@ -31,6 +31,8 @@
       </span>
       {% endif %}
 
+      {% include '_custom/google_ad_header.swig' %}
+
       {% for post in page.posts %}
 
         {# Show year #}
