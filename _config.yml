@@ -138,6 +138,7 @@ exturl: false
 # External url should start with http:// or https://
 menu:
   home: / || home
+  markdown: https://md.finolo.gy || edit
   about: /about/ || user
   tags: /tags/ || tags
   categories: /categories/ || th
@@ -277,8 +278,8 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
-  length: 150
+  enable: true
+  length: 300
 
 # Read more button
 # If true, the read more button would be displayed in excerpt section.
@@ -542,7 +543,7 @@ valine:
   avatar: mm # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
-  visitor: true # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
+  visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
   comment_count: true # if false, comment count will only be displayed in post page, not in home page
 
 # Support for LiveRe comments system.
