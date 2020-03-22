@@ -117,7 +117,7 @@ darkmode: false
 # When running the site in a subdirectory (e.g. yoursite.com/blog), remove the leading slash from link value (/archives -> archives).
 # External url should start with http:// or https://
 menu:
-#  home: / || home
+  home: / || home
   markdown: https://md.finolo.gy || edit
   about: /about/ || user
   tags: /tags/ || tags
@@ -697,15 +697,15 @@ cnzz_siteid:
 # AppID and AppKey are recommended to be the same as valine's for counter compatibility.
 # Do not enable both `valine.visitor` and `leancloud_visitors`.
 leancloud_visitors:
-  enable: false
-  app_id: # <your app id>
-  app_key: # <your app key>
+  enable: true
+  app_id: SfaSE3g5tgBX5HeHdlgjym1o-gzGzoHsz
+  app_key: iTsJGCNiGxrdBjV47UDN6X8p
   # Required for apps from CN region
-  server_url: # <your server url>
+  server_url:
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in leancloud counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
-  security: true
+  security: false
 
 # Another tool to show number of visitors to each article.
 # Visit https://console.firebase.google.com/u/0/ to get apiKey and projectId.
@@ -718,13 +718,14 @@ firestore:
 
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
+# simon 这个用来统计总体访问量和阅读量，单篇文章采用leancloud
 busuanzi_count:
   enable: true
   total_visitors: true
   total_visitors_icon: user
   total_views: true
   total_views_icon: eye
-  post_views: true
+  post_views: false
   post_views_icon: eye
 
 
