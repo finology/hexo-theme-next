@@ -32,3 +32,9 @@
   </ul>
 {%- endif %}
 </nav>
+{#<nav class="site-nav">
+  <form id="searchform" method="get" action="http://localhost:4000/">
+  <input type="text" class="search-field" name="s" placeholder="" value="">
+  <input type="submit" value="搜索">
+</nav>
+#}
